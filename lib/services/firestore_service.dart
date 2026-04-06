@@ -10,7 +10,7 @@ class FirestoreService {
     await _itemsRef.add(item.toMap());
   }
 
-  // READ (real-time stream)
+  // READ
   Stream<List<Item>> streamItems({String? category, String? sortBy}) {
     Query query = _itemsRef;
 
